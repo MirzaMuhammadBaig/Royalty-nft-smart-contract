@@ -62,6 +62,6 @@ contract Antematter is ERC721, Ownable {
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
-        price.add(10 * 10 ** 18);
+        price += 10 * 10 ** 18;
     }
 }
