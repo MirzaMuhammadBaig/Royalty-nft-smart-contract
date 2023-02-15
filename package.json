@@ -1,5 +1,19 @@
 {
+  "name": "first_task",
+  "version": "1.0.0",
+  "description": "This is our first task from Antematter as a blockchain developer",
+  "main": "",
+  "keywords": [
+    "Awesome"
+  ],
+  "author": "Muhammad",
+  "license": "MIT",
   "devDependencies": {
-    "hardhat": "^2.12.7"
+    "hardhat": "^2.12.7",
+    "@openzeppelin/contracts": "^4.8.1"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@openzeppelin/contracts": "^4.8.1"
   }
 }
