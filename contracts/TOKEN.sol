@@ -18,10 +18,10 @@ contract TOKEN is ERC20, Ownable {
     }
 
     function buy(address to, uint256 amount) public payable{
-        require(balanceOf(owner()) >= amount,"Not enough funds in smart contract");
-        require(msg.value >= price * amount,"Insufficent deposite");
-        payable(msg.sender).transfer(msg.value);
         uint256 tokens = amount * 10 ** decimals();
+        require(balanceOf(owner()) >= tokens,"Not enough funds in smart contract");
+        require(msg.value >= price * amount,"Insufficent deposite");
+        payable(owner()).transfer(msg.value);
         _mint(to, tokens);
         _burn(owner(), tokens);
     }
