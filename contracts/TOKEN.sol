@@ -7,6 +7,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract TOKEN is ERC20, Ownable {
     uint256 public price;
 
+    event buyTokens(address _from, address _to, uint256 _tokens);
+
     constructor(
         uint256 initialSupply,
         uint256 _price
@@ -29,5 +31,6 @@ contract TOKEN is ERC20, Ownable {
         payable(owner()).transfer(msg.value);
         _mint(to, tokens);
         _burn(owner(), tokens);
+        emit buyTokens (owner(), to, tokens);
     }
 }

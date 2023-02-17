@@ -20,6 +20,8 @@ contract NFT is ERC721, Ownable {
 
     Counters.Counter private _tokenIdCounter;
 
+    event safe_Mint(address nft_mint, uint256 _price);
+
     constructor(
         uint256 _totalSupply,
         uint256 _price,
@@ -69,6 +71,7 @@ contract NFT is ERC721, Ownable {
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
-        price += 1 * 10 ** 18;
+        emit safe_Mint (to, price);
+        price += 10 * 10 ** 18;
     }
 }
