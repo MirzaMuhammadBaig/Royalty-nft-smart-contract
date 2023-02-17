@@ -22,3 +22,7 @@ main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
+
+// TOKEN contract has been deployed at: 0xCC2E97F7190FD726966395b6C185f8989416ae71
+// NFT contract has been deployed at: 0xA9a8E5BF85c129634C1aCe7a9dfe703D0ffC1B62
+// On sepolia
