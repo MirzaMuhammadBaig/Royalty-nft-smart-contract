@@ -5,7 +5,7 @@ async function main() {
   const TOKEN = await hre.ethers.getContractFactory("TOKEN");
   const token = await TOKEN.deploy(10000000, 1);
   const NFT = await hre.ethers.getContractFactory("NFT");
-  const nft = await NFT.deploy(50, 10, token.address);
+  const nft = await NFT.deploy(50, 1, token.address);
 
   await token.deployed();
   await nft.deployed();
