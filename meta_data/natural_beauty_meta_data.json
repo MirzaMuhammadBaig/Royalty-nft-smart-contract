@@ -1,5 +1,15 @@
 {
-    "name": "Spongebob Cowboy Pants",
-    "description": "A silent hero. A watchful protector.",
-    "image": "https://gateway.pinata.cloud/ipfs/QmW9iwCxvUmfW3oyffJYXe7xkNMPhTDpwWFJKqdMa175VN"
+    "attributes": [
+        {
+            "trait_type": "Breed",
+            "value": "Maltipoo"
+        },
+        {
+            "trait_type": "Eye color",
+            "value": "Mocha"
+        }
+    ],
+    "description": "The world's most adorable and sensitive pup.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmW9iwCxvUmfW3oyffJYXe7xkNMPhTDpwWFJKqdMa175VN",
+    "name": "Cute Dog"
 }
