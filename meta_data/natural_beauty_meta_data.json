@@ -1,28 +1,5 @@
 {
-    "title": "Asset Metadata",
-    "type": "object",
-    "attributes": [
-        {
-            "trait_type": "Breed",
-            "value": "Maltipoo"
-        },
-        {
-            "trait_type": "Eye color",
-            "value": "Mocha"
-        }
-    ],
-    "properties": {
-        "name": {
-            "type": "string",
-            "description": "Identifies the asset to which this NFT represents"
-        },
-        "description": {
-            "type": "string",
-            "description": "Describes the asset to which this NFT represents"
-        },
-        "image": {
-            "type": "string",
-            "description": "https://gateway.pinata.cloud/ipfs/QmW9iwCxvUmfW3oyffJYXe7xkNMPhTDpwWFJKqdMa175VN"
-        }
-    }
+    "name": "Spongebob Cowboy Pants",
+    "description": "A silent hero. A watchful protector.",
+    "image": "https://gateway.pinata.cloud/ipfs/QmW9iwCxvUmfW3oyffJYXe7xkNMPhTDpwWFJKqdMa175VN"
 }

@@ -8,10 +8,10 @@ const { API_URL_INFURA, PRIVATE_KEY } = process.env;
 
 module.exports = {
   solidity: "0.8.17",
-  defaultNetwork: "sepolia",
+  defaultNetwork: "goerli",
   networks: {
     hardhat: {},
-    sepolia: {
+    goerli: {
       url: API_URL_INFURA,
       accounts: [`0x${PRIVATE_KEY}`],
       gasMultiplier: 1,
@@ -19,7 +19,7 @@ module.exports = {
       gasPrice: 8000000000,
       timeout: 20000,
       saveDeployments: true,
-      chainId: 11155111,
+      chainId: 5,
     },
   },
 };

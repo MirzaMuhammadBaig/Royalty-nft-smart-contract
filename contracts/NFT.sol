@@ -34,7 +34,7 @@ contract NFT is ERC721, ERC721URIStorage, Ownable {
     }
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://";
+        return "https://gateway.pinata.cloud/ipfs/";
     }
 
     function safeMint(address to, string memory uri) public payable {
@@ -72,6 +72,7 @@ contract NFT is ERC721, ERC721URIStorage, Ownable {
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
+        tokenURI(tokenId);
         _setTokenURI(tokenId, uri);
         emit safe_Mint (to, price);
         price += 10 * 10 ** 18;

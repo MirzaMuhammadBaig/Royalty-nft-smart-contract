@@ -44,5 +44,4 @@ async function mintNFT(to, tokenURI) {
         })
 }
 
-mintNFT(PUBLIC_KEY, 'QmZ3vt1RxMEiR1twrNSWNZZb1W4tJa2jLJPgkp1rn5MH6q');
-// mintNFT(PUBLIC_KEY, 'QmXLM6sU1okMTL5BueH9V5MfGWUv5ysAQYqBApRJiCDskd');
+mintNFT(PUBLIC_KEY, "QmbHtecwmXssGTxbW5tNjeeYVQb8hKiryCtaTu2a2uFLG4");

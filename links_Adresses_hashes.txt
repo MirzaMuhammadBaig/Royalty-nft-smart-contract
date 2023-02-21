@@ -1,26 +1,6 @@
-npx hardhat run --network sepolia scripts/deploy.js:
-TOKEN contract has been deployed at 0xc185F6152CB4D77f948C8C659d4d3fd27221aC6B
-NFT contract has been deployed at 0x1fE3503c0E8A239Ee6FbBe8139d66183792A0fE4
+Token contract = 0x5071D8d2E23fda87aBC0618Cb42c6f6AC8237B58
+Nft contract = 0x107F6A9104de8d364449aeb3598fE61Af0E1F4F5
 
-node scripts/setAllowance:
-Your transaction record
-0x2177e7955ad3e7c8875bd9584922dc66e8dcbd37446a8fffd775669a137d0e69
-You have successfully approve 12345678900000000000000000000000
+approve function hash = 0xa38421759b32d46172992fe6fc3ea4de3f81dbae238733e909fee8219af0f44a
 
-node scripts/checkBalanceOfERC20
-This address 0x107F6A9104de8d364449aeb3598fE61Af0E1F4F5 balance is 10000000000000000000000000
-
-node scripts/checkBalanceOfERC721
-This address 0x107F6A9104de8d364449aeb3598fE61Af0E1F4F5 balance is 0
-
-node scripts/mintNFT
-The hash of your transaction is:  0xa43d51c6f3cd159b7c58e98840998edd6535b9003f67cc7bd7a637a7449530c2 
-
-node scripts/mintNFT
-The hash of your transaction is:  0x9e499a0ec4af91b1ad4a368102c39bf67ff335387b7a6e7bc0b1c0f1d3f03a35
-
-node scripts/mintNFT
-The hash of your transaction is:  0x2abce9bb2ab5e533351017b6ec375d95b407521d17931311fbc4733d1f7f58f7
-
-node scripts/checkBalanceOfERC721
-This address 0x107F6A9104de8d364449aeb3598fE61Af0E1F4F5 balance is 3
+NFT link = https://testnets.opensea.io/assets/goerli/0x3c33a368e219aa7ab784a1d5cd13f334e705e318/1
