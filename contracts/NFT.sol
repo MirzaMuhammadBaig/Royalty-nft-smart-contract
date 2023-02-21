@@ -20,6 +20,8 @@ contract NFT is ERC721, ERC721URIStorage, Ownable {
     IERC20 public USDT;
 
     Counters.Counter private _tokenIdCounter;
+    
+    error InvalidTokenURI();
 
     event safe_Mint(address nft_mint, uint256 _price);
 
@@ -44,6 +46,9 @@ contract NFT is ERC721, ERC721URIStorage, Ownable {
             "Insufficient allowance"
         );
         require(circulatingSupply < totalSupply, "Supply exceed");
+        if (bytes(metaDataHash).length != 46) {
+            revert InvalidTokenURI();
+        }
         circulatingSupply++;
         nftOwners.push(payable(msg.sender));
         require(circulatingSupply == nftOwners.length, "Some thing wrong");
