@@ -37,5 +37,5 @@ Skill up task 12Mint your own NFT collection and ship a Web3 app to show them of
 If you're a developer curious about NFTs, this is perfect. Programmatically generate your own NFT collection, 
 write + deploy a smart contract in Solidity, and build your own React dApp to let friends connect their wallets 
 and interact w/ your NFTs
-```
 https://buildspace.so/p/mint-nft-collection/lessons/create-contract-that-mints-nftsdhat
+```
