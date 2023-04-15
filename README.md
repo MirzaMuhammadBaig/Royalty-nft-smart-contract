@@ -1,5 +1,4 @@
-# This is my first skill up task.
-
+# Royalty-nft-smart-contract
 ## Ethereum Training task
 
 ```
