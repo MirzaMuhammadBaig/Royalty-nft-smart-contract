@@ -1,9 +1,6 @@
 # This is my first skill up task.
 
-## Skill up task 1
-
-
-## Ethereum Training task 1
+## Ethereum Training task
 
 ```
 Create a smart contract using the ERC721 and ERC720 standards, allowing for the 
